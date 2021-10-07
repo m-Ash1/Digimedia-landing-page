@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* XLarge */
+@media (min-width: 1440px) {
+  .container {
+    width: 1310px;
+  }
+}
+.upper-nav {
+  background-color: #efefef;
+  padding: 15px 0;
+}
+.upper-nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+.upper-nav .container .contact {
+  display: flex;
+  color: #afafaf;
+  font-size: 14px;
+  align-items: center;
+}
+.contact .fab {
+  font-size: 24px;
+}
+
+.upper-nav .container .contact .mail {
+  margin-right: 30px;
+}
+.upper-nav .container .social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.upper-nav .container .social-icons .fab {
+  font-size: 30px;
+  padding-right: 10px;
+  color: #afafaf;
+}
+
+nav {
+  padding: 20px 0;
+  -webkit-box-shadow: 0px 10px 42px -41px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 0px 10px 42px -41px rgb(0 0 0 / 75%);
+  box-shadow: 0px 10px 42px -41px rgb(0 0 0 / 75%);
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li {
+  padding-right: 50px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 0px 20px;
+  border: 1px solid #fa65b1;
+  height: 40px;
+  color: #fa65b1;
+  font-weight: 500;
+}
+.btn.btn-nav {
+  height: 40px;
+  align-self: center;
+}
+
+.section1 {
+  padding: 120px 0px;
+  position: relative;
+}
+.section1::before {
+  content: url("../images/slider-left-dec.jpg");
+  position: absolute;
+  top: 0;
+}
+.section1::after {
+  z-index: -1;
+  content: url(../images/slider-right-dec.jpg);
+  position: absolute;
+  right: 200px;
+  top: -30px;
+}
+.section1 .container {
+  display: flex;
+}
+.section1 .container .left-part {
+  padding: 50px 0px;
+  width: 50%;
+}
+.upper-heading {
+  color: #fa65b1;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.section1 .container .left-part .heading {
+  font-size: 52px;
+  font-weight: 700;
+  color: #2c2c2c;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+.section1 .container .left-part .desc {
+  color: #afafaf;
+  width: 80%;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.btn-main {
+  width: fit-content;
+}
+.section1 .container .right-part {
+  width: 50%;
+}
+.section1 .container .right-part img {
+  width: 90%;
+}
