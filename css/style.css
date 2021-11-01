@@ -270,9 +270,59 @@ ul li {
 .ld-circle .per {
   font-weight: 700;
   font-size: 38px;
-  margin-bottom: -28px;
+  margin-bottom: -14px;
 }
 .ld-circle .loading-title {
   opacity: 0.4;
   font-size: 18px;
+}
+.main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-heading .heading {
+  font-size: 38px;
+}
+.main-heading .upper-heading {
+  color: #726be3;
+  font-size: 16px;
+}
+.main-heading .heading::after {
+  content: "";
+  width: 50px;
+  height: 2.5px;
+  position: absolute;
+  background-color: #726be3;
+  left: 50%;
+  bottom: -82%;
+  transform: translate(-50%, -50%);
+}
+.section3 .grid-row {
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  place-content: space-evenly;
+}
+
+.grid-row .card {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.grid-row .card p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.grid-row .card:hover {
+  -webkit-box-shadow: 0px 0px 112px -59px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 112px -59px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 112px -59px rgba(0, 0, 0, 0.75);
 }
