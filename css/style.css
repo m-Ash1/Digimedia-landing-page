@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -29,7 +32,7 @@ body {
 /* XLarge */
 @media (min-width: 1440px) {
   .container {
-    width: 1310px;
+    width: 1400px;
   }
 }
 .upper-nav {
@@ -62,8 +65,12 @@ body {
   font-size: 30px;
   padding-right: 10px;
   color: #afafaf;
+  transition: 0.4s;
 }
-
+.upper-nav .container .social-icons .fab:hover {
+  color: #fa65b1;
+  cursor: pointer;
+}
 nav {
   padding: 20px 0;
   -webkit-box-shadow: 0px 10px 42px -41px rgb(0 0 0 / 75%);
@@ -94,6 +101,11 @@ ul li {
   padding-right: 50px;
   font-weight: 500;
   font-size: 16px;
+  transition: 0.4s;
+}
+ul li:hover {
+  cursor: pointer;
+  color: #fa65b1;
 }
 .btn {
   display: flex;
@@ -105,6 +117,12 @@ ul li {
   height: 40px;
   color: #fa65b1;
   font-weight: 500;
+  transition: 0.4s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #fa65b1;
+  color: white;
 }
 .btn.btn-nav {
   height: 40px;
@@ -284,6 +302,7 @@ ul li {
 }
 .main-heading .heading {
   font-size: 38px;
+  position: relative;
 }
 .main-heading .upper-heading {
   color: #726be3;
@@ -296,7 +315,7 @@ ul li {
   position: absolute;
   background-color: #726be3;
   left: 50%;
-  bottom: -82%;
+  bottom: -55%;
   transform: translate(-50%, -50%);
 }
 .section3 .grid-row {
@@ -304,25 +323,152 @@ ul li {
   margin-top: 60px;
   grid-template-columns: 15% 15% 15% 15% 15%;
   place-content: space-evenly;
+  padding: 0px 40px;
 }
-
+.section3 {
+  position: relative;
+}
+.section3 .container {
+  padding: 80px 0px;
+}
+.section3 .back-svg {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: -50px;
+  z-index: -1;
+  background-image: url(../images/services-left-dec.jpg);
+  background-repeat: no-repeat;
+}
+.section3 .svg {
+  display: flex;
+}
+.section3 .back-svg-right {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  z-index: -1;
+}
 .grid-row .card {
-  width: 100%;
-  height: 150px;
+  width: 210px;
+  height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 15px;
   transition: 0.5s;
+  background-color: white;
 }
 .grid-row .card p {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.grid-row .card {
+  -webkit-box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
 }
 
 .grid-row .card:hover {
+  cursor: pointer;
   -webkit-box-shadow: 0px 0px 112px -59px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 112px -59px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 112px -59px rgba(0, 0, 0, 0.75);
+}
+
+.wide-card {
+  width: 100%;
+  display: flex;
+  padding: 100px;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  background-color: white;
+}
+
+.wide-card .left-part .wide-head {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fa65b1;
+}
+.check-grid {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wide-card .check-grid .check {
+  margin-right: 45px;
+  margin-bottom: 20px;
+}
+
+.section4 {
+  background-image: url("../images/quote-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section4 .container {
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section4 .main-heading {
+  margin-bottom: 60px;
+}
+.section4 .main-heading .upper-heading {
+  color: white;
+}
+.section4 .main-heading .heading {
+  color: white;
+}
+.section4 .main-heading .heading::after {
+  background-color: white;
+  bottom: -30%;
+}
+
+.form {
+  height: 90px;
+  background-color: white;
+  border-radius: 50px;
+  width: 1000px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+.section4 .form input,
+.section4 .form button {
+  outline: none;
+  border: 0;
+  width: calc(93% / 3);
+}
+
+.section4 .form input {
+  margin-left: 25px;
+  height: 50%;
+  border-bottom: 1px solid #00000017;
+}
+.section4 .form input::placeholder,
+.section4 .form input {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.8;
+}
+
+.section4 .form button {
+  background-color: #726be3;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  border-radius: 0;
+  cursor: pointer;
+  align-self: stretch;
 }
