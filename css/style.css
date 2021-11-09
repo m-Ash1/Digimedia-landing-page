@@ -315,7 +315,7 @@ ul li:hover {
   position: absolute;
   background-color: #726be3;
   left: 50%;
-  bottom: -55%;
+  bottom: -50%;
   transform: translate(-50%, -50%);
 }
 .section3 .grid-row {
@@ -434,10 +434,10 @@ ul li:hover {
 }
 
 .form {
-  height: 90px;
+  height: 80px;
   background-color: white;
   border-radius: 50px;
-  width: 1000px;
+  width: 900px;
   display: flex;
   overflow: hidden;
   align-items: center;
@@ -471,4 +471,172 @@ ul li:hover {
   border-radius: 0;
   cursor: pointer;
   align-self: stretch;
+}
+
+.section5 {
+  padding: 120px 0px 0px;
+  position: relative;
+}
+.section5 .main-heading {
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.section5 .main-heading .heading::after {
+  left: 27px;
+  bottom: -30%;
+}
+
+.section5 .cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 35px;
+  padding: 0px 35px 0px 35px;
+  flex-wrap: wrap;
+}
+.section5 .cards-grid .project-card {
+  -webkit-box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 30px;
+  background-color: white;
+  overflow: hidden;
+}
+.section5 .cards-grid .project-card:hover .card-desc {
+  color: #fa65b1;
+}
+.project-card .image {
+  height: 80%;
+}
+.project-card .image img {
+  width: 100%;
+  height: 100%;
+}
+.project-card .card-desc {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.4s;
+  padding: 5px;
+}
+.project-card .card-desc .desc-head-card {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.project-card .card-desc .desc-card {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.section5 .back-svg {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section6 {
+  padding: 120px 0 80px;
+}
+.section6 .main-heading {
+  margin-bottom: 80px;
+}
+.section6 .cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.section6 .cards-grid .special-card {
+  grid-row: span 3;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.section6 .cards-grid .special-card img {
+  width: 100%;
+}
+.section6 .cards-grid .card {
+  display: flex;
+}
+.lower-card {
+  padding: 20px 25px;
+}
+
+.lower-card .label-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.label-date .label {
+  background-color: #726ae3;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.label-date .date {
+  opacity: 0.6;
+  font-size: 15px;
+  align-self: center;
+}
+
+.card-content .card-heading {
+  font-weight: bold;
+  font-size: 20px;
+  width: 90%;
+  margin-bottom: 25px;
+}
+.card-content .card-desc {
+  font-size: 15px;
+  opacity: 0.5;
+  margin-bottom: 25px;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-info .image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 55px;
+  height: 55px;
+}
+.card-info span {
+  margin-right: 230px;
+  opacity: 0.75;
+  font-size: 15px;
+}
+.card .upper-card .image {
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+}
+.card .upper-card {
+  width: 40%;
+}
+.card .upper-card .image img {
+  width: 100%;
+}
+
+.card .lower-card .label-date {
+  margin-bottom: 15px;
+}
+.card .lower-card .card-content .card-heading {
+  margin-bottom: 15px;
+}
+.card .lower-card .card-content .card-desc {
+  margin-bottom: 15px;
+  width: 80%;
+}
+.card .lower-card {
+  padding: 20px 25px;
 }
