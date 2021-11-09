@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -543,6 +544,7 @@ ul li:hover {
 
 .section6 {
   padding: 120px 0 80px;
+  position: relative;
 }
 .section6 .main-heading {
   margin-bottom: 80px;
@@ -639,4 +641,111 @@ ul li:hover {
 }
 .card .lower-card {
   padding: 20px 25px;
+}
+.section6 .back-svg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.section7 {
+  padding: 0px 0px 100px;
+}
+.section7 .main-heading {
+  position: relative;
+  margin-bottom: 70px;
+}
+.section7 .main-heading img {
+  position: absolute;
+  right: 30px;
+}
+
+.section7 .contact-form {
+  display: flex;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 25px;
+}
+.contact-form .map {
+  width: 40%;
+  overflow: hidden;
+}
+.contact-form .contact-body {
+  width: 60%;
+  padding: 80px 50px;
+  position: relative;
+}
+.contact-body::before {
+  content: url(../images/contact-top-right.png);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  right: -96px;
+}
+
+.contact-body::after {
+  content: url(../images/contact-bottom-right.png);
+  position: absolute;
+  bottom: -7px;
+  width: 100%;
+  right: -290px;
+}
+.section7 .cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.section7 .cards-container .card {
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 30px 45px;
+  transition: 0.4s;
+}
+.cards-container .card:hover {
+  color: #fa65b1;
+  cursor: pointer;
+}
+.cards-container .card img {
+  margin-bottom: 10px;
+}
+.contact-body form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-body form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.contact-body form input,
+textarea {
+  outline: none;
+  border: 1px solid #0000001f;
+  padding: 15px;
+  border-radius: 25px;
+  opacity: 0.7;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-body form .btn {
+  grid-column: span 2;
+  margin-top: 10px;
+  padding: 23px;
+}
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: white;
+  line-height: 25px;
 }
